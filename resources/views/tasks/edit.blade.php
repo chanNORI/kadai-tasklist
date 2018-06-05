@@ -4,8 +4,6 @@
 
 <h1>id: {{ $task->id }} のタスク編集ページ</h1>
 
-<div class="row">
-    <div class="col-xs-6">
 
     {!! Form::model($task, ['route' => ['tasks.update', $task->id], 'method' => 'put']) !!}
 
@@ -23,6 +21,4 @@
 
     {!! Form::close() !!}
 
-    </div>
-</div>
 @endsection
